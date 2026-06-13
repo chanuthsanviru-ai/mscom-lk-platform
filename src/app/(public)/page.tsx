@@ -23,7 +23,7 @@ export default function HomePage() {
             <Card key={feature.title}>
               <feature.icon className="text-gold-500" />
               <h3 className="mt-4 text-xl font-bold">{feature.title}</h3>
-              <p className="mt-2 text-sm leading-6 text-red-950/60 dark:text-white/60">
+              <p className="mt-2 text-sm leading-6 text-emerald-950/60 dark:text-white/60">
                 {feature.description}
               </p>
             </Card>
@@ -31,7 +31,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section bg-red-950 text-white">
+      <section className="section bg-emerald-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
             <p className="text-sm font-bold uppercase tracking-[0.24em] text-gold-100">
@@ -76,7 +76,7 @@ export default function HomePage() {
       </section>
 
       <section className="section">
-        <div className="mx-auto max-w-4xl rounded-3xl bg-red-800 p-8 text-center text-white shadow-glow md:p-10">
+        <div className="mx-auto max-w-4xl rounded-3xl bg-emerald-800 p-8 text-center text-white shadow-glow md:p-10">
           <h2 className="font-[var(--font-display)] text-3xl font-bold">
             Ready to join the next batch?
           </h2>
@@ -85,7 +85,7 @@ export default function HomePage() {
           </p>
 
           <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-            <ButtonLink href="/register" className="bg-gold-400 text-red-950 hover:bg-gold-100">
+            <ButtonLink href="/register" className="bg-gold-400 text-emerald-950 hover:bg-gold-100">
               Register Now <ArrowRight className="ml-2" size={18} />
             </ButtonLink>
             <a
@@ -105,7 +105,7 @@ export default function HomePage() {
           {faqs.map((faq) => (
             <Card key={faq.q}>
               <h3 className="font-bold">{faq.q}</h3>
-              <p className="mt-2 text-sm text-red-950/60 dark:text-white/60">
+              <p className="mt-2 text-sm text-emerald-950/60 dark:text-white/60">
                 {faq.a}
               </p>
             </Card>

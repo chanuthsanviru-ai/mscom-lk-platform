@@ -21,7 +21,7 @@ export default function AboutPage() {
       />
 
       <div className="mx-auto grid max-w-6xl gap-5 lg:grid-cols-[1fr_1.1fr]">
-        <div className="rounded-3xl bg-red-950 p-8 text-white shadow-glow">
+        <div className="rounded-3xl bg-emerald-950 p-8 text-white shadow-glow">
           <p className="text-sm font-bold uppercase tracking-[0.24em] text-gold-100">
             Biography
           </p>
