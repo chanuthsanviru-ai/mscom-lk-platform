@@ -7,7 +7,7 @@ import { ThemeToggle } from "./theme-toggle";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-emerald-900/10 bg-white/80 backdrop-blur-xl dark:border-white/10 dark:bg-emerald-950/80">
+    <header className="animate-slide-down sticky top-0 z-50 border-b border-emerald-900/10 bg-white/80 backdrop-blur-xl dark:border-white/10 dark:bg-emerald-950/80">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center gap-3">
           <span className="grid h-11 w-11 place-items-center rounded-md bg-emerald-800 text-lg font-black text-gold-100">MS</span>
