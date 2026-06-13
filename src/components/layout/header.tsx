@@ -12,7 +12,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-3">
           <span className="grid h-11 w-11 place-items-center rounded-md bg-emerald-800 text-lg font-black text-gold-100">MS</span>
           <span>
-            <span className="block text-lg font-black text-emerald-950 dark:text-white">MScom.lk</span>
+            <span className="block text-lg font-black text-emerald-950 dark:text-white">MScom.one</span>
             <span className="block text-xs text-emerald-900/60 dark:text-white/60">Commerce Academy</span>
           </span>
         </Link>

@@ -20,7 +20,7 @@ export default async function ContactPage({
     <section className="section">
       <SectionHeading
         eyebrow="Contact"
-        title="Talk to the MScom.lk team"
+        title="Talk to the MScom.one team"
         description="Use WhatsApp for the fastest reply or send a contact request."
       />
 

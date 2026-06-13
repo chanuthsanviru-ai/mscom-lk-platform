@@ -13,7 +13,7 @@ export default function HomePage() {
 
       <section className="section">
         <SectionHeading
-          eyebrow="Why MScom.lk"
+          eyebrow="Why MScom.one"
           title="A sharper class experience for Commerce students"
           description="Built around Sri Lankan A/L expectations, with premium class delivery and practical student support."
         />

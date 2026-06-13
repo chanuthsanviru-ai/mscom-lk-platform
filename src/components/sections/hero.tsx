@@ -17,7 +17,7 @@ export function Hero() {
           </p>
 
           <h1 className="font-[var(--font-display)] text-4xl font-black leading-tight text-emerald-950 dark:text-white md:text-6xl">
-            MScom.lk
+            MScom.one
           </h1>
 
           <p className="mt-5 max-w-2xl text-lg leading-8 text-emerald-950/70 dark:text-white/70">
@@ -59,7 +59,7 @@ export function Hero() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl text-white">
             <Image
               src="/images/image1.png"
-              alt="MScom.lk teacher portrait"
+              alt="MScom.one teacher portrait"
               fill
               priority
               className="object-cover object-center"
