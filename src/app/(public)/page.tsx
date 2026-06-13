@@ -19,8 +19,8 @@ export default function HomePage() {
         />
 
         <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3">
-          {features.map((feature, index) => (
-            <Card key={feature.title} className="animate-scale-in transition-transform hover:scale-105 hover:shadow-lg" style={{ animationDelay: `${index * 0.1}s` }}>
+          {features.map((feature) => (
+            <Card key={feature.title} className="animate-scale-in transition-transform hover:scale-105 hover:shadow-lg">
               <feature.icon className="text-gold-500" />
               <h3 className="mt-4 text-xl font-bold">{feature.title}</h3>
               <p className="mt-2 text-sm leading-6 text-emerald-950/60 dark:text-white/60">
@@ -63,8 +63,8 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
-            {upcomingClasses.map((item, index) => (
-              <Card key={item.title} className="animate-scale-in border-white/10 bg-white/10 text-white transition-transform hover:scale-105 hover:shadow-lg" style={{ animationDelay: `${index * 0.1}s` }}>
+            {upcomingClasses.map((item) => (
+              <Card key={item.title} className="animate-scale-in border-white/10 bg-white/10 text-white transition-transform hover:scale-105 hover:shadow-lg">
                 <p className="text-sm font-semibold text-gold-100">{item.type}</p>
                 <h3 className="mt-3 text-lg font-bold">{item.title}</h3>
                 <p className="mt-3 text-sm text-white/60">{item.time}</p>
@@ -102,8 +102,8 @@ export default function HomePage() {
       <section className="section pt-0">
         <SectionHeading eyebrow="FAQ" title="Questions students ask first" />
         <div className="mx-auto grid max-w-4xl gap-3">
-          {faqs.map((faq, index) => (
-            <Card key={faq.q} className="animate-slide-up transition-all hover:shadow-lg" style={{ animationDelay: `${index * 0.05}s` }}>
+          {faqs.map((faq) => (
+            <Card key={faq.q} className="animate-slide-up transition-all hover:shadow-lg">
               <h3 className="font-bold">{faq.q}</h3>
               <p className="mt-2 text-sm text-emerald-950/60 dark:text-white/60">
                 {faq.a}

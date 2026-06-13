@@ -39,10 +39,9 @@ export function Hero() {
           </div>
 
           <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div
                 key={stat.label}
-                style={{ animationDelay: `${index * 0.1}s` }}
                 className="animate-scale-in rounded-lg border border-emerald-900/10 bg-white/70 p-4 transition-transform hover:scale-105 dark:border-white/10 dark:bg-white/10"
               >
                 <p className="text-2xl font-black text-emerald-800 dark:text-gold-100">
@@ -56,7 +55,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="glass relative animate-fade-in rounded-2xl p-4" style={{ animationDelay: "0.3s" }}>
+        <div className="glass relative animate-fade-in rounded-2xl p-4">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl text-white">
             <Image
               src="/images/image1.png"
