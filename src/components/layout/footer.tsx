@@ -5,7 +5,7 @@ import { whatsappLink } from "@/lib/utils";
 
 export function Footer() {
   return (
-    <footer className="border-t border-emerald-900/10 bg-emerald-950 text-white">
+    <footer className="border-t border-red-900/10 bg-red-950 text-white">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <p className="text-2xl font-black text-gold-100">MScom.lk</p>

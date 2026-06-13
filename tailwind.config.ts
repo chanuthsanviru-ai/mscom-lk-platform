@@ -10,8 +10,14 @@ const config: Config = {
         display: ["var(--font-display)", "Georgia", "serif"]
       },
       colors: {
-        emerald: {
-          950: "#06261f"
+        red: {
+          50: "#fef2f2",
+          100: "#fee2e2",
+          500: "#ef4444",
+          700: "#b91c1c",
+          800: "#991b1b",
+          900: "#7f1d1d",
+          950: "#7f1d1d"
         },
         gold: {
           50: "#fff9e8",
@@ -22,7 +28,7 @@ const config: Config = {
         ink: "#071612"
       },
       boxShadow: {
-        glow: "0 24px 80px rgba(12, 96, 70, 0.22)"
+        glow: "0 24px 80px rgba(127, 29, 29, 0.22)"
       },
       animation: {
         "fade-up": "fadeUp 0.7s ease-out both"

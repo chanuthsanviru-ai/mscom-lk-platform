@@ -17,7 +17,7 @@ export default function SchedulePage() {
       />
 
       <div className="mx-auto mb-8 grid max-w-7xl gap-5 lg:grid-cols-[0.95fr_1.05fr]">
-        <div className="rounded-3xl bg-emerald-950 p-8 text-white shadow-glow">
+        <div className="rounded-3xl bg-red-950 p-8 text-white shadow-glow">
           <p className="text-sm font-bold uppercase tracking-[0.24em] text-gold-100">
             Class types
           </p>
@@ -50,7 +50,7 @@ export default function SchedulePage() {
             <div className="md:col-span-2">
               <p className="text-xs font-bold uppercase text-gold-500">{item.mode}</p>
               <h2 className="text-xl font-bold">{item.subject}</h2>
-              <p className="text-sm text-emerald-950/60 dark:text-white/60">{item.batch}</p>
+              <p className="text-sm text-red-950/60 dark:text-white/60">{item.batch}</p>
             </div>
 
             <p>{item.day}</p>
