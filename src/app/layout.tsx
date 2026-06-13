@@ -13,22 +13,22 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-displa
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "MScom.lk | A/L Commerce and Business Studies Classes",
-    template: "%s | MScom.lk"
+    default: "MScom.one | A/L Commerce and Business Studies Classes",
+    template: "%s | MScom.one"
   },
   description: "Premium Sri Lankan A/L Commerce and Business Studies tuition platform with online and physical classes.",
-  keywords: ["A/L Commerce", "Business Studies", "Sri Lanka tuition", "MScom.lk", "online classes"],
+  keywords: ["A/L Commerce", "Business Studies", "Sri Lanka tuition", "MScom.one", "online classes"],
   openGraph: {
-    title: "MScom.lk",
+    title: "MScom.one",
     description: "A/L Commerce and Business Studies classes for Sri Lankan students.",
     url: siteUrl,
-    siteName: "MScom.lk",
+    siteName: "MScom.one",
     locale: "en_LK",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "MScom.lk",
+    title: "MScom.one",
     description: "Premium A/L Commerce and Business Studies tuition in Sri Lanka."
   }
 };
@@ -37,7 +37,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
       <body className="font-sans antialiased">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Header />
           <main>{children}</main>
           <Footer />

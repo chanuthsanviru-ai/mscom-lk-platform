@@ -17,7 +17,7 @@ export function Hero() {
           </p>
 
           <h1 className="font-[var(--font-display)] text-4xl font-black leading-tight text-emerald-950 dark:text-white md:text-6xl">
-            MScom.lk
+            MScom.one
           </h1>
 
           <p className="mt-5 max-w-2xl text-lg leading-8 text-emerald-950/70 dark:text-white/70">
@@ -42,7 +42,7 @@ export function Hero() {
             {stats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-lg border border-emerald-900/10 bg-white/70 p-4 dark:border-white/10 dark:bg-white/10"
+                className="animate-scale-in rounded-lg border border-emerald-900/10 bg-white/70 p-4 transition-transform hover:scale-105 dark:border-white/10 dark:bg-white/10"
               >
                 <p className="text-2xl font-black text-emerald-800 dark:text-gold-100">
                   {stat.value}
@@ -55,11 +55,11 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="glass relative rounded-2xl p-4">
+        <div className="glass relative animate-fade-in rounded-2xl p-4">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl text-white">
             <Image
               src="/images/image1.png"
-              alt="MScom.lk teacher portrait"
+              alt="MScom.one teacher portrait"
               fill
               priority
               className="object-cover object-center"

@@ -7,9 +7,9 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 const styles = {
-  primary: "bg-emerald-700 text-white shadow-glow hover:bg-emerald-800",
-  secondary: "border border-emerald-700/20 bg-white/80 text-emerald-950 hover:bg-gold-50 dark:bg-white/10 dark:text-white",
-  ghost: "text-emerald-900 hover:bg-emerald-50 dark:text-emerald-50 dark:hover:bg-white/10"
+  primary: "bg-emerald-700 text-white shadow-glow transition-all duration-300 hover:bg-emerald-800 hover:shadow-glow hover:scale-105 active:scale-95",
+  secondary: "border border-emerald-700/20 bg-white/80 text-emerald-950 transition-all duration-300 hover:bg-gold-50 hover:scale-105 dark:bg-white/10 dark:text-white active:scale-95",
+  ghost: "text-emerald-900 transition-all duration-300 hover:bg-emerald-50 hover:scale-105 dark:text-emerald-50 dark:hover:bg-white/10 active:scale-95"
 };
 
 export function Button({ className, variant = "primary", ...props }: ButtonProps) {
