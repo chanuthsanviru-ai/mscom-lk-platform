@@ -9,9 +9,6 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <p className="text-2xl font-black text-gold-100">MScom.one</p>
-          <p className="mt-3 max-w-md text-sm text-white/70">
-            Premium A/L Commerce and Business Studies classes for Sri Lankan students, built for online and physical learning.
-          </p>
         </div>
 
         <div>

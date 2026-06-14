@@ -42,10 +42,6 @@ export default async function ContactPage({
             <h2 className="mt-3 font-bold">Hotline</h2>
             <p className="mt-2 text-sm">+94 71 809 6628</p>
           </Card>
-
-          <div className="grid min-h-56 place-items-center rounded-2xl border border-dashed border-emerald-900/20 bg-white/50 text-sm text-emerald-950/60 dark:border-white/15 dark:bg-white/5 dark:text-white/60">
-            Google Maps Placeholder
-          </div>
         </div>
 
         <form action={submitContact} className="glass grid gap-4 rounded-3xl p-6">

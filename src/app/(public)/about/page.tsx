@@ -8,8 +8,7 @@ export default function AboutPage() {
   const items = [
     "B.Com / Business Management academic background",
     "12+ years A/L Commerce teaching experience",
-    "Specialized in Business Studies answer structure",
-    "Island and district rank mentoring programs"
+    "Specialized in Business Studies answer structure"
   ];
 
   return (

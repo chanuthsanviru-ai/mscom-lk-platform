@@ -15,7 +15,6 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Why MScom.one"
           title="A sharper class experience for Commerce students"
-          description="Built around Sri Lankan A/L expectations, with premium class delivery and practical student support."
         />
 
         <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3">
