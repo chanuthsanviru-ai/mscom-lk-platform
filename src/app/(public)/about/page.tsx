@@ -20,7 +20,7 @@ export default function AboutPage() {
         description="A clear teaching philosophy: simplify concepts, train answer structure, repeat past-paper logic, and keep every student accountable."
       />
 
-      <div className="mx-auto grid max-w-6xl gap-5 lg:grid-cols-[1fr_1.1fr]">
+      <div className="mx-auto grid max-w-6xl gap-5 px-2 lg:grid-cols-[1fr_1.1fr]">
         <ScrollRevealWrapper>
           <div className="rounded-3xl bg-emerald-950 p-8 text-white shadow-glow">
             <p className="text-sm font-bold uppercase tracking-[0.24em] text-gold-100">

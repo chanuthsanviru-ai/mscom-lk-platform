@@ -25,7 +25,7 @@ export default async function ContactPage({
         description="Use WhatsApp for the fastest reply or send a contact request."
       />
 
-      <div className="mx-auto grid max-w-6xl gap-5 lg:grid-cols-[0.8fr_1.2fr]">
+      <div className="mx-auto grid max-w-6xl gap-5 px-2 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="grid gap-4">
           <ScrollRevealWrapper>
             <Card className="transition-transform hover:scale-105 hover:shadow-lg">
@@ -50,7 +50,7 @@ export default async function ContactPage({
         </div>
 
         <ScrollRevealWrapper>
-          <form action={submitContact} className="glass grid gap-4 rounded-3xl p-6">
+          <form action={submitContact} className="glass grid gap-4 rounded-3xl p-4 sm:p-6">
           {params.success ? (
             <p className="rounded-md bg-emerald-100 p-3 text-sm text-emerald-900">
               Message received. We will contact you soon.

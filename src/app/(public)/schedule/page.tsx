@@ -17,7 +17,7 @@ export default function SchedulePage() {
         description="Choose classes with pricing and mode clearly shown."
       />
 
-      <div className="mx-auto mb-8 grid max-w-7xl gap-5 lg:grid-cols-[0.95fr_1.05fr]">
+      <div className="mx-auto mb-8 grid max-w-7xl gap-5 px-2 lg:grid-cols-[0.95fr_1.05fr]">
         <ScrollRevealWrapper>
           <div className="rounded-3xl bg-emerald-950 p-8 text-white shadow-glow">
             <p className="text-sm font-bold uppercase tracking-[0.24em] text-gold-100">
@@ -44,25 +44,25 @@ export default function SchedulePage() {
         </ScrollRevealWrapper>
       </div>
 
-      <div className="mx-auto grid max-w-7xl gap-4">
+      <div className="mx-auto grid max-w-7xl gap-4 px-2">
         {schedules.map((item) => (
           <ScrollRevealWrapper key={`${item.subject}-${item.batch}`}>
             <Card
-              className="grid gap-4 md:grid-cols-6 md:items-center transition-transform hover:scale-105 hover:shadow-lg"
+              className="grid gap-3 sm:gap-4 grid-cols-2 sm:grid-cols-6 sm:items-center transition-transform hover:scale-105 hover:shadow-lg"
             >
-              <div className="md:col-span-2">
+              <div className="col-span-2 sm:col-span-2">
                 <p className="text-xs font-bold uppercase text-gold-500">{item.mode}</p>
-                <h2 className="text-xl font-bold">{item.subject}</h2>
-                <p className="text-sm text-emerald-950/60 dark:text-white/60">{item.batch}</p>
+                <h2 className="text-lg sm:text-xl font-bold">{item.subject}</h2>
+                <p className="text-xs sm:text-sm text-emerald-950/60 dark:text-white/60">{item.batch}</p>
               </div>
 
-              <p>{item.day}</p>
-              <p>{item.time}</p>
-              <p className="font-bold">{item.fee}</p>
+              <p className="text-xs sm:text-base">{item.day}</p>
+              <p className="text-xs sm:text-base">{item.time}</p>
+              <p className="font-bold text-xs sm:text-base">{item.fee}</p>
 
               <ButtonLink
                  href={`/register?subject=${encodeURIComponent(item.subject)}&batch=${encodeURIComponent(item.batch)}`}
-                 className="w-full md:w-auto"
+                 className="col-span-2 sm:col-span-1 sm:w-auto text-xs sm:text-base py-2 sm:py-auto"
               >
                   Join
              </ButtonLink>
