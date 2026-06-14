@@ -16,7 +16,7 @@ export function Hero() {
             A/L Business Studies and O/L Commerce Sri Lanka
           </p>
 
-          <h1 className="font-[var(--font-display)] text-4xl font-black leading-tight text-emerald-950 dark:text-white md:text-6xl">
+          <h1 className="font-[var(--font-display)] text-4xl font-black leading-tight text-emerald-950 dark:text-white md:text-6xl animate-typing">
             MScom.one
           </h1>
 
@@ -66,24 +66,6 @@ export function Hero() {
             />
 
             <div className="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent" />
-
-            <div className="absolute inset-x-0 bottom-0 p-5 md:p-6">
-              <div className="rounded-2xl border border-white/15 bg-black/35 p-5 backdrop-blur-xl">
-                <p className="text-sm uppercase tracking-[0.25em] text-gold-100">
-                  Commerce Academy
-                </p>
-                <h2 className="mt-3 text-3xl font-black leading-tight md:text-4xl">
-                  Business Studies + Commerce
-                </h2>
-
-                <div className="mt-5 flex items-center gap-3 rounded-xl bg-white p-4 text-emerald-950">
-                  <PlayCircle className="text-gold-500" />
-                  <span className="text-sm font-semibold">
-                    Revision, paper marking and resources
-                  </span>
-                </div>
-              </div>
-            </div>
 
             
           </div>

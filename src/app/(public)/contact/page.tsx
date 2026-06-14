@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { Input, Textarea } from "@/components/ui/input";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { whatsappLink } from "@/lib/utils";
+import { ScrollRevealWrapper } from "@/components/ui/scroll-reveal-wrapper";
 
 export const metadata: Metadata = { title: "Contact" };
 
@@ -24,31 +25,32 @@ export default async function ContactPage({
         description="Use WhatsApp for the fastest reply or send a contact request."
       />
 
-      <div className="mx-auto grid max-w-6xl gap-5 lg:grid-cols-[0.8fr_1.2fr]">
+      <div className="mx-auto grid max-w-6xl gap-5 px-2 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="grid gap-4">
-          <Card>
-            <MessageCircle className="text-gold-500" />
-            <h2 className="mt-3 font-bold">WhatsApp Hotline</h2>
-            <a
-              className="mt-3 inline-flex font-semibold text-emerald-700 dark:text-gold-100"
-              href={whatsappLink()}
-            >
-              Message on WhatsApp
-            </a>
-          </Card>
+          <ScrollRevealWrapper>
+            <Card className="transition-transform hover:scale-105 hover:shadow-lg">
+              <MessageCircle className="text-gold-500" />
+              <h2 className="mt-3 font-bold">WhatsApp Hotline</h2>
+              <a
+                className="mt-3 inline-flex font-semibold text-emerald-700 dark:text-gold-100"
+                href={whatsappLink()}
+              >
+                Message on WhatsApp
+              </a>
+            </Card>
+          </ScrollRevealWrapper>
 
-          <Card>
-            <Phone className="text-gold-500" />
-            <h2 className="mt-3 font-bold">Hotline</h2>
-            <p className="mt-2 text-sm">+94 71 809 6628</p>
-          </Card>
-
-          <div className="grid min-h-56 place-items-center rounded-2xl border border-dashed border-emerald-900/20 bg-white/50 text-sm text-emerald-950/60 dark:border-white/15 dark:bg-white/5 dark:text-white/60">
-            Google Maps Placeholder
-          </div>
+          <ScrollRevealWrapper>
+            <Card className="transition-transform hover:scale-105 hover:shadow-lg">
+              <Phone className="text-gold-500" />
+              <h2 className="mt-3 font-bold">Hotline</h2>
+              <p className="mt-2 text-sm">+94 71 809 6628</p>
+            </Card>
+          </ScrollRevealWrapper>
         </div>
 
-        <form action={submitContact} className="glass grid gap-4 rounded-3xl p-6">
+        <ScrollRevealWrapper>
+          <form action={submitContact} className="glass grid gap-4 rounded-3xl p-4 sm:p-6">
           {params.success ? (
             <p className="rounded-md bg-emerald-100 p-3 text-sm text-emerald-900">
               Message received. We will contact you soon.
@@ -66,7 +68,8 @@ export default async function ContactPage({
           <Input type="email" name="email" placeholder="Email" />
           <Textarea name="message" placeholder="Message" required />
           <Button>Send Message</Button>
-        </form>
+          </form>
+        </ScrollRevealWrapper>
       </div>
     </section>
   );
