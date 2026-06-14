@@ -1,11 +1,22 @@
+"use client";
+
 import Link from "next/link";
 import { Menu, MessageCircle } from "lucide-react";
+import { useRef } from "react";
 import { navItems } from "@/lib/data";
 import { whatsappLink } from "@/lib/utils";
 import { ButtonLink } from "@/components/ui/button";
 import { ThemeToggle } from "./theme-toggle";
 
 export function Header() {
+  const detailsRef = useRef<HTMLDetailsElement>(null);
+
+  const closeMenu = () => {
+    if (detailsRef.current) {
+      detailsRef.current.open = false;
+    }
+  };
+
   return (
     <header className="animate-slide-down sticky top-0 z-50 border-b border-emerald-900/10 bg-white/80 backdrop-blur-xl dark:border-white/10 dark:bg-emerald-950/80">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
@@ -29,10 +40,19 @@ export function Header() {
             <MessageCircle size={18} />
           </a>
           <ButtonLink href="/register" className="hidden md:inline-flex">Register</ButtonLink>
-          <details className="relative lg:hidden">
+          <details ref={detailsRef} className="relative lg:hidden">
             <summary className="inline-flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-md border border-emerald-900/10" aria-label="Menu"><Menu size={20} /></summary>
             <div className="absolute right-0 mt-3 grid w-48 gap-1 rounded-lg border border-emerald-900/10 bg-white p-2 shadow-glow dark:border-white/10 dark:bg-emerald-950">
-              {navItems.map((item) => <Link key={item.href} href={item.href} className="rounded-md px-3 py-2 text-sm font-medium hover:bg-emerald-50 dark:hover:bg-white/10">{item.label}</Link>)}
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={closeMenu}
+                  className="rounded-md px-3 py-2 text-sm font-medium hover:bg-emerald-50 dark:hover:bg-white/10"
+                >
+                  {item.label}
+                </Link>
+              ))}
             </div>
           </details>
         </div>
