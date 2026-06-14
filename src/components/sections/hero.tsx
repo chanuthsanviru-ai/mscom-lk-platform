@@ -16,7 +16,7 @@ export function Hero() {
             A/L Business Studies and O/L Commerce Sri Lanka
           </p>
 
-          <h1 className="font-[var(--font-display)] text-4xl font-black leading-tight text-emerald-950 dark:text-white md:text-6xl">
+          <h1 className="font-[var(--font-display)] text-4xl font-black leading-tight text-emerald-950 dark:text-white md:text-6xl animate-typing">
             MScom.one
           </h1>
 
