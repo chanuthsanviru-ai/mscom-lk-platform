@@ -27,7 +27,7 @@ export default function AboutPage() {
               Biography
             </p>
 
-            <h2 className="mt-3 text-3xl font-bold leading-tight animate-typing">
+            <h2 className="mt-3 text-3xl font-bold leading-tight">
               Commerce education with care, standards, and measurable progress.
             </h2>
 
