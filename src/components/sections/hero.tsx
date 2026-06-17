@@ -21,7 +21,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-5 max-w-2xl text-lg leading-8 text-emerald-950/70 dark:text-white/70">
-            Premium A/L Commerce and Business Studies classes designed for Sri Lankan students who want structure, confidence, and exam-ready results.
+            A/L Commerce and Business Studies classes designed for Sri Lankan students who want structure, confidence, and exam-ready results.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

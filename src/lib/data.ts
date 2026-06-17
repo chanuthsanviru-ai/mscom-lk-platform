@@ -1,4 +1,3 @@
-
 import { BookOpen, CalendarDays, GraduationCap, Medal, MessageCircle, ShieldCheck, Users } from "lucide-react";
 
 export const navItems = [
@@ -58,6 +57,5 @@ export const achievementCards = [
 
 export const faqs = [
   { q: "Can I join online?", a: "Yes. Online classes and downloadable resources are designed for students across Sri Lanka." },
-  { q: "Do parents receive updates?", a: "The registration form collects parent contact details for notices, payment updates, and urgent class changes." },
-  { q: "Are recordings available?", a: "The dashboard includes placeholders for future LMS access and resources, ready for recorded lessons when enabled." }
+  { q: "Do parents receive updates?", a: "The registration form collects parent contact details for notices, payment updates, and urgent class changes." }
 ];
