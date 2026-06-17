@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: "MScom.one | A/L Commerce and Business Studies Classes",
     template: "%s | MScom.one"
   },
-  description: "Premium Sri Lankan A/L Commerce and Business Studies tuition platform with online and physical classes.",
+  description: "Sri Lankan A/L Commerce and Business Studies tuition platform with online and physical classes.",
   keywords: ["A/L Commerce", "Business Studies", "Sri Lanka tuition", "MScom.one", "online classes"],
   icons: {
     icon: "/favicon.png"
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "MScom.one",
-    description: "Premium A/L Commerce and Business Studies tuition in Sri Lanka."
+    description: "A/L Commerce and Business Studies tuition in Sri Lanka."
   }
 };
 
