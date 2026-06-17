@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   },
   description: "Premium Sri Lankan A/L Commerce and Business Studies tuition platform with online and physical classes.",
   keywords: ["A/L Commerce", "Business Studies", "Sri Lanka tuition", "MScom.one", "online classes"],
+  icons: {
+    icon: "/favicon.png"
+  },
   openGraph: {
     title: "MScom.one",
     description: "A/L Commerce and Business Studies classes for Sri Lankan students.",
